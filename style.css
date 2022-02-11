@@ -12,6 +12,14 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
 .header {
     height: 100vh;
     background-image: url(img/background.jpg);
@@ -19,18 +27,27 @@ body {
     background-position: center;
     color: #fff;
     text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.header-text {
+    padding: 0 30px;
+    max-width: 75%;
 }
 
 .header-hello {
     font-size: 150px;
+    font-weight: 600;
 }
 
 .header-my-name-is {
     font-size: 50px;
+    font-weight: 100;
 }
 
 .header-name {
     font-size: 100px;
+    font-weight: 700;
 }
 
 .overlay {
@@ -40,4 +57,53 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #333;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.header-logo {
+    background-image: url(img/logo.png);
+    background-size: contain;
+    position: relative;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-list > li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 767px) {
+    .menu-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list > li {
+        padding: 10px 0;
+    }
 }
