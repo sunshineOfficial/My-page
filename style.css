@@ -1,4 +1,43 @@
-html {
+body, h1, h2, h3, h4, p, a {
     margin: 0;
-    -webkit-font-smoothing: antialiased;
-  }
+    font-size: 100%;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-hello {
+    font-size: 150px;
+}
+
+.header-my-name-is {
+    font-size: 50px;
+}
+
+.header-name {
+    font-size: 100px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
