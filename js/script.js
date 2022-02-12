@@ -11,7 +11,7 @@ if (menuLinks.length > 0) {
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             e.preventDefault();
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header-container').offsetHeight;
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header-container').offsetHeight;
 
             window.scrollTo({
                 top: gotoBlockValue,
@@ -30,7 +30,7 @@ button.addEventListener('click', changeTheme);
 
 function changeTheme(e) {
     e.preventDefault();
-    
+
     let lightTheme = 'css/light.css';
     let darkTheme = 'css/dark.css';
 
