@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Хрунин Дмитрий</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/light.css" id="theme-link">
         <link rel="icon" type="image" href="img/favicon.ico">
     </head>
     <body>
@@ -16,14 +17,15 @@
                 </div>
                 <nav class="menu-body">
                     <ul class="menu-list">
-                        <li><a href="" class="menu-link">Главная</a></li>
-                        <li><a href="" class="menu-link">Обо мне</a></li>
-                        <li><a href="" class="menu-link">Контакты</a></li>
+                        <li><a data-goto=".header" href="#" class="menu-link">Главная</a></li>
+                        <li><a data-goto=".about" href="#" class="menu-link">Обо мне</a></li>
+                        <li><a href="#" class="menu-link">Контакты</a></li>
+                        <li><a href="#" class="theme-button menu-link" id="theme-button">Сменить тему</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        
+
         <header class="header">
             <div class="overlay">
                 <h1 class="header-text header-hello">Привет!</h1>
@@ -31,6 +33,13 @@
                 <h2 class="header-text header-name">Хрунин Дмитрий Алексеевич</h2>
             </div>
         </header>
-        <script src="script.js"></script>
+
+        <article class="about">
+            <h2 class="about-text about-title">Обо мне</h2>
+            <section class="personal">
+                <p>Что-то обо мне</p>
+            </section>
+        </article>
+        <script src="js/script.js"></script>
     </body>
 </html>

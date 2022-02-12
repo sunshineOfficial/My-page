@@ -1,0 +1,14 @@
+.header {
+    background-image: url(../img/dark-background.jpg);
+    color: #f4f4f4;
+}
+
+.header-container {
+    background-color: #373737;
+    color: #f4f4f4;
+}
+
+.about {
+    background-color: #111;
+    color: #f4f4f4;
+}
