@@ -17,3 +17,9 @@
     background-color: #373737;
     color: #f4f4f4;
 }
+
+@media (max-width: 1080px) {
+    .menu-body::before {
+        background-color: #373737;
+    }
+}
