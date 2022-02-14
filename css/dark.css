@@ -1,5 +1,13 @@
-.header {
+body {
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+.background {
     background-image: url(../img/dark-background.jpg);
+}
+
+.header {
     color: #f4f4f4;
 }
 
